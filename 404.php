@@ -15,14 +15,16 @@ get_header();
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'heidistheme' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Oh dear.  The dog ate your page.', 'heidistheme' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'heidistheme' ); ?></p>
-
+					<p><?php esc_html_e( "It looks like nothing was found at this location. Send us a message about what you were looking for or just gaze into Kelly's soulful eyes.", 'heidistheme' ); ?></p>
 					<?php
-					get_search_form();
+
+					echo do_shortcode( '[contact-form-7 id="1234" title="Contact form 1"]' );
+
+					/*get_search_form();
 
 					the_widget( 'WP_Widget_Recent_Posts' );
 					?>
@@ -44,10 +46,10 @@ get_header();
 
 					<?php
 					/* translators: %1$s: smiley */
-					$heidistheme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'heidistheme' ), convert_smilies( ':)' ) ) . '</p>';
+					/*$heidistheme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'heidistheme' ), convert_smilies( ':)' ) ) . '</p>';
 					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$heidistheme_archive_content" );
 
-					the_widget( 'WP_Widget_Tag_Cloud' );
+					the_widget( 'WP_Widget_Tag_Cloud' );*/
 					?>
 
 				</div><!-- .page-content -->

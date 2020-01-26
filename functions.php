@@ -130,7 +130,17 @@ function heidistheme_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'heidistheme_scripts' );
+
+add_action('wp_enqueue_scripts', 'wpsites_heidistheme_404_style_sheet');
+function wpsites_heidistheme_404_style_sheet()
+  {
+    if(is_404())
+      {
+        wp_enqueue_style('heidistheme-404-style', get_stylesheet_directory_uri() . '/css/heidistheme-404-style.css');
+      }
+  }
 
 /**
  * Implement the Custom Header feature.
