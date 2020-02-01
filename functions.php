@@ -157,7 +157,7 @@ function heidismodifiedtheme_custom_header_setup() {
         // Display the header text along with the image
         'header-text'           => true,
         // Header text color default
-        'default-text-color'        => '000',
+        'default-text-color'        => 'fff',
         // Header image width (in pixels)
         'width'             => 190,
         // Header image height (in pixels)
