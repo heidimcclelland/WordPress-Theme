@@ -175,7 +175,7 @@ function heidismodifiedtheme_custom_header_setup() {
 		);
 		add_theme_support( 'custom-header', $defaults );
 }
-add_action( 'after_setup_theme', 'heidismodifiedthemee_custom_header_setup' );
+add_action( 'after_setup_theme', 'heidismodifiedtheme_custom_header_setup' );
 /*
 function heidismodifiedtheme_custom_header_setup() {
     $args = array(
