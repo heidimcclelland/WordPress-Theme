@@ -159,19 +159,19 @@ function heidismodifiedtheme_custom_header_setup() {
         // Header text color default
         'default-text-color'        => '000',
         // Header image width (in pixels)
-        'width'             => 1902,
+        'width'             => 190,
         // Header image height (in pixels)
-        'height'            => 2356,
+        'height'            => 236,
         // Header image random rotation default
         'random-default'        => false,
         // Enable upload of image file in admin 
         'uploads'       => false,
         // function to be called in theme head section
-        'wp-head-callback'      => 'wphead_cb',
+        //'wp-head-callback'      => 'wphead_cb',
         //  function to be called in preview page head section
-        'admin-head-callback'       => 'adminhead_cb',
+        //'admin-head-callback'       => 'adminhead_cb',
         // function to produce preview markup in the admin screen
-        'admin-preview-callback'    => 'adminpreview_cb',
+        //'admin-preview-callback'    => 'adminpreview_cb',
 		);
 		add_theme_support( 'custom-header', $defaults );
 }
