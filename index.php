@@ -32,7 +32,8 @@ get_header();
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
-
+				//can add other stuff like author(); and excerpt etc but
+				//need to leave post();
 				/*
 				 * Include the Post-Type-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
