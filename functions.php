@@ -153,15 +153,15 @@ function wpsites_heidismodifiedtheme_404_style_sheet()
 function heidismodifiedtheme_custom_header_setup() {
     $defaults = array(
         // Default Header Image to display
-        'default-image'         => get_template_directory_uri() . '/images/headers/default.jpg',
+        'default-image'         => get_template_directory_uri() . '/assets/images/headers/defaultdog.jpg',
         // Display the header text along with the image
-        'header-text'           => false,
+        'header-text'           => true,
         // Header text color default
         'default-text-color'        => '000',
         // Header image width (in pixels)
-        'width'             => 1000,
+        'width'             => 1902,
         // Header image height (in pixels)
-        'height'            => 198,
+        'height'            => 2356,
         // Header image random rotation default
         'random-default'        => false,
         // Enable upload of image file in admin 
